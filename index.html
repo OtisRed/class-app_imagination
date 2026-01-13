@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyobraźnia Socjologiczna - Losowanie Tematów</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wyobraźnia Socjologiczna</h1>
+        </header>
+
+        <section class="card instructions">
+            <h2>📋 Instrukcja zadania</h2>
+            <div class="content">
+                <p>Celem tego ćwiczenia jest rozwijanie wyobraźni socjologicznej poprzez analizę codziennych przedmiotów, miejsc lub wydarzeń w szerszym kontekście społecznym.</p>
+            
+                <h3>Jak przystąpić do zadania:</h3>
+                <ol>
+                    <li>Kliknij przycisk "Losuj temat" </li>
+                    <li>Zastanów się nad nim z perspektywy socjologicznej</li>
+                    <li>Znajdź (conajmniej) 4 funkcje, znaczenia lub konteksty społeczne, które tłumaczą jak można myśleć o tym samym temacie na różne sposoby</li>
+                    <li>Dla każdego kontekstu napisz 2-3 zdania z konkretnym przykładem</li>
+                </ol>
+
+                <div class="key-task">
+                    <p><strong>Jeśli masz kłopot z tematem, wylosuj kolejny, a jeśli masz wątpliwości, co do zadania, sprawdź przykłady poniżej.</p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="card lottery">
+            <h2>🎲 Losowanie tematu</h2>
+            <div class="content">
+                <div id="topic-display" class="topic-box">
+                    <p class="topic-placeholder">Kliknij przycisk aby wylosować swój temat</p>
+                </div>
+                <button id="draw-button" class="draw-btn">Losuj temat</button>
+            </div>
+        </section>
+
+        <section id="drawn-history" class="card history" style="display: none;">
+            <h2>📝 Historia wylosowanych tematów</h2>
+            <div class="content">
+                <div id="history-list"></div>
+            </div>
+        </section>
+
+        <section class="card examples">
+            <h2>💡 Wieloznaczność językowa i społeczna</h2>
+            <div class="content">
+                <p class="intro-text">W tym zadaniu <strong>nie chodzi</strong> o wieloznaczność językową (fakt, że jedno słowo ma wiele definicji słownikowych), ale o wieloznaczność społeczną.</p>
+                <p class="intro-text">Kiedy wylosujecie hasło – np. „zamek" – najpierw dokonajcie wyboru jednego ze znaczeń językowych (czy chodzi o budowlę, zamek błyskawiczny, czy taki z piasku - przykłady poniżej).</p>
+                <p class="intro-text">Dopiero wtedy zastanówcie się, czym ta jedna, konkretna rzecz jest dla różnych ludzi, w odmiennym kontekście, miejscu lub czasie.</p>
+                
+                <h3>Przykłady polisemii językowej i społecznej:</h3>
+                
+                <div class="example">
+                    <h4>Zamek z piasku:</h4>
+                    <hr>
+                    <ul>
+                        <li><strong>Dla dziecka:</strong> może być świetną zabawą i polem do wyobraźni.</li>
+                        <li><strong>Dla innych dzieci:</strong> sposobem na zawarcie nowych znajomości („mogę pożyczyć łopatkę?").</li>
+                        <li><strong>Dla rodziców:</strong> chwilą wytchnienia na leżaku, gdy dzieci są zajęte.</li>
+                        <li><strong>Dla rodziny:</strong> pamiątką uwiecznioną na wakacyjnym zdjęciu.</li>
+                        <li><strong>Dla spacerujących plażowiczów:</strong> uroczą ozdobą, ale i przeszkodą, którą trzeba ominąć.</li>
+                        <li><strong>Dla nauczyciela fizyki:</strong> przykładem na działanie napięcia powierzchniowego wody (dlaczego mokry piasek się klei).</li>
+                        <li><strong>Dla producenta zabawek:</strong> popytem na plastikowe wiaderka i foremki, który trzeba zaspokoić.</li>
+                    </ul>
+                </div>
+
+                <div class="example">
+                    <h4>Zamek (budowla):</h4>
+                    <hr>
+                    <ul>
+                        <li><strong>Dla turysty:</strong> jest tłem do zdjęcia na Instagram i atrakcją do „zaliczenia" w weekend.</li>
+                        <li><strong>Dla historyka:</strong> to zbiór faktów, dat i architektonicznych detali, o które trzeba dbać.</li>
+                        <li><strong>Dla lokalnego mieszkańca:</strong> może być powodem do dumy, ale też utrapieniem przez korki i tłumy w sezonie.</li>
+                        <li><strong>Dla konserwatora zabytków:</strong> to niekończąca się walka z wilgocią, grzybem i pękającymi murami.</li>
+                        <li><strong>Dla dziecka:</strong> to sceneria z bajki, gdzie może mieszkać smok lub księżniczka.</li>
+                        <li><strong>Dla zarządcy obiektu:</strong> to ogromne koszty ogrzewania i wyzwanie logistyczne (jak zorganizować toalety dla wycieczek?).</li>
+                        <li><strong>Dla ducha (w legendach):</strong> to miejsce wiecznej pokuty i straszenia.</li>
+                    </ul>
+                </div>
+
+                <div class="example">
+                    <h4>Zamek błyskawiczny:</h4>
+                    <hr>
+                    <ul>
+                        <li><strong>Dla osoby spóźnionej do pracy:</strong> zacięty suwak to źródło frustracji i stresu („złośliwość rzeczy martwych").</li>
+                        <li><strong>Dla przedszkolaka:</strong> to wielki test samodzielności i sprawności manualnej przed wyjściem na dwór.</li>
+                        <li><strong>Dla krawca:</strong> to usługa do wykonania, element wymagający precyzyjnego wszycia.</li>
+                        <li><strong>Dla projektanta mody:</strong> może być elementem ozdobnym, nadającym kurtce rockowy charakter.</li>
+                        <li><strong>Dla osoby na mrozie:</strong> to granica między ciepłem a zimnem, gwarantująca komfort termiczny.</li>
+                        <li><strong>Dla inżyniera:</strong> to genialny w swojej prostocie mechanizm łączący dwie krawędzie.</li>
+                        <li><strong>W symbolice:</strong> gest „zamykania buzi na kłódkę" (dochowanie tajemnicy).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Ćwiczenia z Socjologii | Wyobraźnia Socjologiczna</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
